@@ -1,10 +1,12 @@
-# 25年3.29-4.5
+# 25年3.29-4.4
 
 整体规划：
 
 首要任务是完成中期报告和中期答辩，复现MMA-Diffusion代码并修正，修正方向考虑两个，一个是替换掉CLIP 的text_encoder为hunyuan的，中途下错了模型，混元github跳转到的HF模型居然是错的(难崩，也可能是我不会用)，其次是构建高质量的Prompt，MMA-Diffusion作为CVPR的文章，在这上面敷衍我也就容忍了，不过这些原文的数据集的prompt质量实在是有点太低了吧。
 
-本周主线是弄明白并实践知乎blog《从啥也不会到DeepSpeed-分布式训练的学习过程总结》https://zhuanlan.zhihu.com/p/688873027。大佬的文章特别好，看完了通信原语，DP，TP，PP的一些基本算法，也复现了ring all-reduce和失败复现了Parameter-Server，搞不懂通信呀搞不懂，一直死锁。
+本周主线是弄明白并实践知乎blog《从啥也不会到DeepSpeed-分布式训练的学习过程总结》https://zhuanlan.zhihu.com/p/688873027。
+
+大佬的文章特别好，看完了通信原语，DP，TP，PP的一些基本算法，也复现了ring all-reduce和失败复现了Parameter-Server，搞不懂通信呀搞不懂，一直死锁。
 
 日常是刷了30道leetcode为后续找实习做准备，同时也在手撕一些经典的积木，先手撕了MHA，GQA，RMS这种比较简单的part。其次就是保持健身，体重也从75下降到了74。
 
